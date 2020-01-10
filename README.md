@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
@@ -91,3 +92,7 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+=======
+# lrgweb
+New Redesign LRG Website For E-Comms
+>>>>>>> 37568f39c48c3eb1476a86f5db2426d06d777943
