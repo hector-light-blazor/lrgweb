@@ -1,3 +1,5 @@
 <script>
-	export let name;
+	import Header from "./componets/Header.svelte";
 </script>
+
+<Header />
