@@ -4,7 +4,8 @@
 	import Footer from "./components/Footer.svelte";
 	import Home from "./pages/Home.svelte";
 	import AboutUs from "./pages/AboutUs.svelte";
-	
+	import PubEd from "./pages/PubEd.svelte";
+	import PubEventForm from "./pages/PubEventForm.svelte";
 	import { Router, Route, Link, navigateTo  } from './lib/main';
 
 
@@ -19,11 +20,17 @@
 	})
 
 </script>
-
+	<style>
+		.wrapper{
+			margin: 0 auto;
+			max-width: 1500px;
+		}
+	</style>
 <Header />
-	<div>
+	<div class="wrapper">
 			 <Router>
-			   
+			    <Route path="#PubEdRequest" component={PubEventForm} />
+			    <Route path="#PubEd" component={PubEd} />
                 <Route path="#AboutUs" component={AboutUs} />
 	            <Route path="#Home" component={Home} />        
             </Router>

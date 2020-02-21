@@ -1,3 +1,6 @@
+<script>
+    import Carousel from "../components/Carousel.svelte";
+</script>
 <div>
-    <h3>Hello Test Page</h3>
+    <Carousel />
 </div>

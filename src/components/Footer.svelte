@@ -2,7 +2,7 @@
 
  <style> 
     #footer{
-        background-color: #2B4988;
+        background-color: #D0D3D9;
         width: 100%;
         height: 15%;
         bottom: 0%;
@@ -12,8 +12,6 @@
   </style>
 
   
-
-
 <div id="footer"></div>
 
 

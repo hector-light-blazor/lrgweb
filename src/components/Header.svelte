@@ -1,43 +1,19 @@
-
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-
-
-
- <style> 
-    #header{
-        background-color: #d0d3d9;
-        width: 100%;
-        height: 15%;
-           }
-    #sub {
-        background-color: #ffffff;
-        width: 100%;
-        height: 10%;
-           }
-
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
+<style> 
 .navbar {
+  display: flex;
   overflow: hidden;
   height: 6%;
-  padding-left: 20%;
-  padding-top: 2%;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
-  padding-bottom: 7px;
-  background-color: #073392 ;
+  background-color: #fff;
+  border-bottom: 5px solid #ddd;
 }
+
 
 .navbar a {
   float: left;
   font-size: 20px;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -50,6 +26,7 @@ body {
 
 .dropdown .dropbtn {
   font-size: 20px; 
+  font-weight: 500;
   border: none;
   outline: none;
   color: white;
@@ -57,10 +34,12 @@ body {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  cursor: pointer;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #4169e1;
+  color: white;
 }
 
 .dropdown-content {
@@ -69,7 +48,9 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
+  cursor: pointer;
+
 }
 
 .dropdown-content a {
@@ -80,25 +61,32 @@ body {
   display: block;
   text-align: left;
 }
-
+button:hover {
+  color: white !important;
+}
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: white;
+  cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  cursor: white;
+}
+
+button {
+  color: rgb(0,80,160) !important;
 }
 
 
 </style>
-</head>
 
 
-<body>
+
 
 <div class="navbar">
   <a href="#Home">HOME</a>
-  <a href="PubEd">PUBLIC EDUCATION</a>
+  <a href="#PubEd">PUBLIC EDUCATION</a>
 
 
   <div class="dropdown"><button class="dropbtn">SERVICES </button>
@@ -119,12 +107,6 @@ body {
 
 </div>
 
-</body>
-
-
-
-<div id="header"></div>
-<div id="sub"></div>
 
 
 
