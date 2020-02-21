@@ -4,17 +4,17 @@
     #footer{
         background-color: #2B4988;
         width: 100%;
-        height: 10%;
+        height: 15%;
+        bottom: 0%;
+        position: fixed;
            }
-    #sub {
-        background-color: rgb(50, 6, 155);
-        width: 100%;
-        height: 10%;
-           }
+
   </style>
-hello
+
+  
+
 
 <div id="footer"></div>
-<div id="sub"></div>
+
 
 

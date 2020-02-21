@@ -1,8 +1,12 @@
 {
   "version": 3,
   "file": "bundle.css",
-  "sources": [],
-  "sourcesContent": [],
+  "sources": [
+    "../../Footer.svelte"
+  ],
+  "sourcesContent": [
+    "\n\n <style> \n    #footer{\n        background-color: #2B4988;\n        width: 100%;\n        height: 15%;\n        bottom: 0%;\n        position: fixed;\n           }\n\n  </style>\n\n  \n\n\n<div id=\"footer\"></div>\n\n\n\n"
+  ],
   "names": [],
-  "mappings": ""
+  "mappings": "AAGI,qBAAO,CAAC,AACJ,gBAAgB,CAAE,OAAO,CACzB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,EAAE,CACV,QAAQ,CAAE,KAAK,AACZ,CAAC"
 }
