@@ -33,7 +33,7 @@ h3{
 
 <div class="grid-container">
     <div class="grid-item">
-        <img class="img" src="/assets/ECOMMSART_WORK.webp" alt="lrgvdc" />
+       
     </div>
     <div class="grid-item">
         <h1>Event Request</h1>
@@ -42,6 +42,6 @@ h3{
         <EventRequest />     
     </div>
     <div class="grid-item">
-        <img class="img" style="float:right;" src="/assets/LRGVDCART_WORK.webp" alt="lrgvdc" />
+        
     </div>
 </div>
