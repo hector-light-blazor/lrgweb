@@ -2,17 +2,16 @@
 
  <style> 
     #footer{
-        background-color: #2B4988;
+        background-color: #263E70;
         width: 100%;
-        height: 15%;
-        bottom: 0%;
-        position: fixed;
+        height:150px;
+       
    }
 
    #footer-internal{
-      position: absolute;
+      position: relative;
       bottom:0;
-      background-color:#263E70;
+      background-color:#2B4988;
       width: 100%;
       height: 60px;
    }

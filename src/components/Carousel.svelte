@@ -51,8 +51,10 @@
     }
 
     img {
-    max-width: 100%;
+    max-width: 98%;
     max-height: 100%;
+    border: 1px solid #ccc!important;
+    padding: 4px;
 }
 
 </style>

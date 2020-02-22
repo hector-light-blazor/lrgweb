@@ -6,8 +6,10 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  
   background-color: #fff;
   border-bottom: 5px solid #ddd;
+  border-top: 5px solid #D9B13B;
 }
 
 
@@ -17,6 +19,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: #556B2F !important;
 }
 
 .dropdown {
@@ -29,7 +32,7 @@
   font-weight: 500;
   border: none;
   outline: none;
-  color: white;
+  color: #556B2F !important;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -38,14 +41,14 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #4169e1;
-  color: white;
+  background-color:#294273;
+  color: #fff;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #294273;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 2;
@@ -55,7 +58,6 @@
 
 .dropdown-content a {
   float: none;
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -71,12 +73,10 @@ button:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  cursor: white;
+  cursor: pointer;
 }
 
-button {
-  color: rgb(0,80,160) !important;
-}
+
 
 
 </style>
