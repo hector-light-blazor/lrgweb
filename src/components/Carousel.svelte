@@ -29,10 +29,13 @@
 
 <style>
     .swiper-container {
+      margin-top: 10px;
       width: 100%;
       height: 100%;
+      border: 0px 5px solid #ddd;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 20px;
     }
     .swiper-slide {
       text-align: center;
@@ -40,50 +43,43 @@
       background: #fff;
 
       /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
+    
     }
 
     .clickable {
         cursor: pointer;
     }
 
+    img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 </style>
-<br />
 <div bind:this={controll}  class="swiper-container">
     <div class="swiper-wrapper">
 
      <div class="swiper-slide">
                 
             <Link href="#PubEdRequest">
-                 <img  class="clickable" alt="PUB"
+                 <img loading="lazy"  class="clickable" alt="PUB"
         src="./build/assets/carousel/event_banner.png" />
 
             </Link>
                
       </div>
        <div class="swiper-slide">
-                <img alt="Training"
+                <img loading="lazy" alt="Training"
         src="./build/assets/carousel/training_banner.png" />
       </div>
 
       <div class="swiper-slide">
-                <img alt="Training"
+                <img loading="lazy" alt="Training"
         src="./build/assets/carousel/911tips_banner.png" />
       </div>
 
       <div class="swiper-slide">
-                <img alt="PUB"
+                <img loading="lazy" alt="PUB"
         src="./build/assets/carousel/pubed_banner.png" />
       </div>
      

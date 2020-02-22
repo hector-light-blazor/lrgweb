@@ -1,13 +1,13 @@
 <script>
     import {onMount} from "svelte";
 
-    export let cardHeight;
-    export let cardWidth;
-    export let circleSize;
-    export let circleBackColor;
-    export let circleTextColor;
-    export let circleValue = 0;
-    export let timerAnimation = 25;
+    export let cardHeight= 280;
+    export let cardWidth = 430;
+    export let circleSize = 80;
+    export let circleBackColor="#2B4988";
+    export let circleTextColor="#fff";
+    export let circleValue = 100;
+    export let timerAnimation = 40;
 
     let statusNumber = 0;
     let interval;
@@ -25,16 +25,16 @@
 </script>
 <style>
     #card {
-        border: 1px solid black;
-        border-radius: 20px;
-        box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, .2);
+        border: 1px solid rgb(222, 222, 222);
+       
+        
     }
     #round {
         position: relative;
         top:0;
         left: 50%;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 1px solid rgb(222, 222, 222);
         text-align: center;
         display: flex;
         overflow: hidden;
