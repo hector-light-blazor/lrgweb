@@ -1,6 +1,15 @@
 <script>
+    import {onMount} from "svelte";
     import Carousel from "../components/Carousel.svelte";
     import RoundCard from "../components/RoundCard.svelte";
+    import Header from "../components/Header.svelte";
+	import Footer from "../components/Footer.svelte";
+    import Wrapper from "../components/Wrapper.svelte";
+    export let nav;
+    
+    onMount(()=> {
+        console.log(nav);
+    })
 </script>
 <style>
     .flex{
@@ -81,7 +90,10 @@
       }
     }
 </style>
-<div>
+
+<Header  {nav} />
+<Wrapper>
+    <div>
     <div class="flex-main">
         <Carousel />
         
@@ -107,22 +119,20 @@
                 </div>
             </div>
         </div>
-        <div id="title">
-            <h1>Address Request</h1>
-            <h3>Summary Overview</h3>
-            <div class="flex">
-                <RoundCard p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County." title="Per Year" />
-                <RoundCard 
-                p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County."
-                title="Per Month" />
-                <RoundCard 
-                p="Did you called for an 9-1-1 address? Tired of waiting? Well don't wait any longer. Find out if you're address is ready.  Click at the following link to get your address letter online!"
-                title="Open Request" />
+            <div id="title">
+                <h1>Address Request</h1>
+                <h3>Summary Overview</h3>
+                <div class="flex">
+                    <RoundCard p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County." title="Per Year" />
+                    <RoundCard 
+                    p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County."
+                    title="Per Month" />
+                    <RoundCard 
+                    p="Did you called for an 9-1-1 address? Tired of waiting? Well don't wait any longer. Find out if you're address is ready.  Click at the following link to get your address letter online!"
+                    title="Open Request" />
+                </div>
             </div>
         </div>
-        
-    
     </div>
-    
-
-</div>
+</Wrapper>
+<Footer />

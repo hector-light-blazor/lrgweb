@@ -1,6 +1,12 @@
 <script>
-     import {  navigateTo } from '../lib/main';
+    
      import VideoPlayer from '../components/VideoPlayer.svelte';
+     import Header from "../components/Header.svelte";
+	 import Footer from "../components/Footer.svelte";
+     import Wrapper from "../components/Wrapper.svelte";
+
+     export let nav;
+
      let txtVideo = false;
      let karisVideo = false;
      let lvVideo = false;
@@ -100,75 +106,76 @@
     }
    
 </style>
-            
-<div class="flex-container">
-     <h1><b>Public Education </b><i > Program</i></h1>
-    <div class="grid-container-3">
-        <div>
-            
-                 <p >
-                    We attend several events which gives us the opportunity to promote and educate the public on how to properly use the 9-1-1 system.
+<Header {nav}  />   
+    <Wrapper>
+        <div class="flex-container">
+        <h1><b>Public Education </b><i > Program</i></h1>
+        <div class="grid-container-3">
+            <div>
+                    <p>
+                        We attend several events which gives us the opportunity to promote and educate the public on how to properly use the 9-1-1 system.
+                    </p>
+                    <p>We give presentations that local cities, school, daycares, Fire, Police Depts. and Emergency Medical Services (EMS) companies within the Hidalgo and Willacy Counties. While attending these events, our mascots (Cell Phone Sally, Josh and Keith Friendly Kid) have become a great part of our education program
+
+                    </p>
+                    <p>
+                        Using multi-media, we demonstrate the proper way to call 9-1-1 and what is considered a 9-1-1 emergency call. Promotional item distribution is a major part of our program.
+                    </p>
+
+                    <div id="btnEvent">
+                    <button on:click="{()=>{console.log("EVENT")}}">EVENT REQUEST</button>
+                    </div>
+            </div>
+            <div></div>
+            <div>
+                <img id="imgCon"  src="/build/assets/pages/pubed/main-photo.webp"  alt="Kids with mascot" />
+            </div>
+        </div>
+
+        
+
+            <div>
+                <h3><i>Do you know how to make 9-1-1 work for you?</i></h3>
+                <p>For forty years, 9-1-1 has served as the vital link between the American public and emergency services. Public education and awareness initiatives throughout the years have contributed in large measure to the incredible and ongoing success of the emergency communications system as a whole. It is imperative that 9-1-1 professionals, teachers, government officials, media representatives, and industry leaders are equipped with the tools necessary to continue these efforts in the face of an ever-changing telecommunications landscape, and that citizens of all ages are well versed in the role they play in ensuring effective and efficient emergency response for themselves and their fellow citizens.The resources below provide you with the tools necessary to educate yourself and your community on the proper use of the 9-1-1 system, no matter which side of the phone you are on.</p>
+                {#if karisVideo}
+                    <VideoPlayer on:click="{()=>{karisVideo = false;}}"  src="{karisLink}" />
+                {:else}
+                    <img on:click="{()=>{karisVideo=!karisVideo}}" loading="lazy" class="imgResponsive" src="/build/assets/pages/pubed/karis_law_banner.jpg" alt="Kari Banner" />
+                {/if}
+                    
+                    <div class="bannerMsg">
+                        require multi-line telephone systems to have a configuration that permits users to directly initiate 
+                        a call to 9-1-1 without dialing any additional digit, code, prefix, or post-fix, and for other purposes.
+                    </div>
+                    {#if lvVideo}
+                            <VideoPlayer on:click="{()=>{lvVideo = false;}}"  src="{lvLink}" />
+                    {:else}
+                            <img on:click="{()=>{lvVideo = !lvVideo}}" loading="lazy" class="imgResponsive" src="/build/assets/pages/pubed/lv_banner.jpg" alt="Lv banner" />
+                    {/if}
+                    <div class="bannerMsg">
+                        We work with other agencies such as the United States Postal Service (USPS), telephone companies and others to make sure the 9-1-1 physical address is well known.
+                    </div>
+                    
+                    {#if txtVideo}
+                            <VideoPlayer on:click="{()=>{txtVideo = false;}}"  src="{txtLink}" />
+                    {:else}
+                            <img loading="lazy" on:click="{()=>{txtVideo=!txtVideo}}" class="imgResponsive" src="/build/assets/pages/pubed/text_to_911_banner.jpg" alt="TXT 911 Banner" />
+                    {/if}
+                    
+                    <div class="bannerMsg">
+                    Text-to-911 is the ability to send a text message to reach 911 emergency call takers from your mobile phone or device. However, because text-to-911 is currently only available in certain locations, you should always make a voice call to contact 911 during an emergency whenever possible.
+                    <br>Visit: <a target="_blank" href="https://www.congress.gov/bill/115th-congress/house-bill/582/text">https://www.congress.gov/bill/115th-congress/house-bill/582/text</a>
+                    </div>
+                    
+                    <div >
+                        <img loading="lazy" class="imgResponsive" width="850" src="/assets/jpg/team_banner.jpg" alt="Team Banner" /> 
+                        <h2 style="text-align: center;color: #88362E;">Click here for event information</h2>
+                    </div>
+
                 
-                </p>
-                <p>We give presentations that local cities, school, daycares, Fire, Police Depts. and Emergency Medical Services (EMS) companies within the Hidalgo and Willacy Counties. While attending these events, our mascots (Cell Phone Sally, Josh and Keith Friendly Kid) have become a great part of our education program
-
-                </p>
-                <p>
-                    Using multi-media, we demonstrate the proper way to call 9-1-1 and what is considered a 9-1-1 emergency call. Promotional item distribution is a major part of our program.
-                </p>
-
-                <div id="btnEvent">
-                   <button on:click="{()=>{navigateTo("#PubEdRequest")}}">EVENT REQUEST</button>
                 </div>
+        
+
         </div>
-        <div></div>
-        <div>
-              <img id="imgCon"  src="/build/assets/pages/pubed/main-photo.webp"  alt="Kids with mascot" />
-        </div>
-    </div>
-
-      
-
-        <div>
-            <h3><i>Do you know how to make 9-1-1 work for you?</i></h3>
-            <p>For forty years, 9-1-1 has served as the vital link between the American public and emergency services. Public education and awareness initiatives throughout the years have contributed in large measure to the incredible and ongoing success of the emergency communications system as a whole. It is imperative that 9-1-1 professionals, teachers, government officials, media representatives, and industry leaders are equipped with the tools necessary to continue these efforts in the face of an ever-changing telecommunications landscape, and that citizens of all ages are well versed in the role they play in ensuring effective and efficient emergency response for themselves and their fellow citizens.The resources below provide you with the tools necessary to educate yourself and your community on the proper use of the 9-1-1 system, no matter which side of the phone you are on.</p>
-            {#if karisVideo}
-                 <VideoPlayer on:click="{()=>{karisVideo = false;}}"  src="{karisLink}" />
-            {:else}
-                <img on:click="{()=>{karisVideo=!karisVideo}}" loading="lazy" class="imgResponsive" src="/build/assets/pages/pubed/karis_law_banner.jpg" alt="Kari Banner" />
-            {/if}
-            
-            <div class="bannerMsg">
-                require multi-line telephone systems to have a configuration that permits users to directly initiate 
-                a call to 9-1-1 without dialing any additional digit, code, prefix, or post-fix, and for other purposes.
-            </div>
-            {#if lvVideo}
-                    <VideoPlayer on:click="{()=>{lvVideo = false;}}"  src="{lvLink}" />
-              {:else}
-                     <img on:click="{()=>{lvVideo = !lvVideo}}" loading="lazy" class="imgResponsive" src="/build/assets/pages/pubed/lv_banner.jpg" alt="Lv banner" />
-              {/if}
-             <div class="bannerMsg">
-                We work with other agencies such as the United States Postal Service (USPS), telephone companies and others to make sure the 9-1-1 physical address is well known.
-            </div>
-              
-              {#if txtVideo}
-                    <VideoPlayer on:click="{()=>{txtVideo = false;}}"  src="{txtLink}" />
-              {:else}
-                    <img loading="lazy" on:click="{()=>{txtVideo=!txtVideo}}" class="imgResponsive" src="/build/assets/pages/pubed/text_to_911_banner.jpg" alt="TXT 911 Banner" />
-              {/if}
-            
-            <div class="bannerMsg">
-               Text-to-911 is the ability to send a text message to reach 911 emergency call takers from your mobile phone or device. However, because text-to-911 is currently only available in certain locations, you should always make a voice call to contact 911 during an emergency whenever possible.
-               <br>Visit: <a target="_blank" href="https://www.congress.gov/bill/115th-congress/house-bill/582/text">https://www.congress.gov/bill/115th-congress/house-bill/582/text</a>
-            </div>
-            
-            <div >
-                <img loading="lazy" class="imgResponsive" width="850" src="/assets/jpg/team_banner.jpg" alt="Team Banner" /> 
-                <h2 style="text-align: center;color: #88362E;">Click here for event information</h2>
-            </div>
-
-          
-        </div>
-   
-
-</div>
+    </Wrapper>
+    <Footer />

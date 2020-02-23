@@ -1,3 +1,8 @@
+<script>
+
+  console.log(window.app);
+</script>
+
 <style> 
 
 .wrapper{
@@ -102,8 +107,8 @@ button:hover {
     </div>
     <div class="navbar">
   
-      <a href="#Home">HOME</a>
-      <a href="#PubEd">PUBLIC EDUCATION</a>
+      <a on:click|preventDefault="{()=>{window.app.navigate('/')}}" href="#Home">HOME</a>
+      <a on:click|preventDefault="{()=>{window.app.navigate('/PubEd')}}" href="#PubEd">PUBLIC EDUCATION</a>
 
 
       <div class="dropdown"><button class="dropbtn">SERVICES </button>
