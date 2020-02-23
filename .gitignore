@@ -3,4 +3,7 @@ node_modules
 public/.DS_Store
 .DS_Store
 public/build/bundle.*
-
+public/build/bundle.css
+public/build/bundle.css.map
+public/build/bundle.js
+public/build/bundle.js.map
