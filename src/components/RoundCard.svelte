@@ -8,6 +8,8 @@
     export let circleTextColor="#fff";
     export let circleValue = 100;
     export let timerAnimation = 40;
+    export let title;
+    export let p;
 
     let statusNumber = 0;
     let interval;
@@ -45,6 +47,14 @@
         
         text-align: center;
     }
+
+    h3::after{
+        content: '';
+    width: 30%;
+    margin: 15px auto 0;
+    display: block;
+    border-bottom: 1px solid #dedede;
+    }
 </style>
 
 
@@ -56,6 +66,12 @@
     height: {circleSize}px; width: {circleSize}px; 
     margin-top:-{(circleSize/2)}px; margin-left: -{(circleSize/2)}px;">
         <h2 style="color: {circleTextColor}">{statusNumber}</h2>
+    </div>
+    <div>
+        <h3>{title}</h3>
+        <p>
+            {p}
+        </p>
     </div>
 
 
