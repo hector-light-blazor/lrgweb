@@ -1,17 +1,30 @@
 <style> 
-.navbar {
-  display: flex;
-  overflow: hidden;
-  height: 6%;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  
+
+.wrapper{
+  height: 60px;
   background-color: #fff;
   border-bottom: 5px solid #ddd;
   border-top: 5px solid #D9B13B;
-}
 
+}
+.navbar {
+  display: flex;
+  overflow: hidden;
+  
+  align-items: center;
+  justify-content: center;
+  font-weight: 520;
+}
+.logo{
+  position: absolute;
+  left: 34px;
+}
+img{
+  max-width: 100%;
+  width: 108px;
+  z-index: 99999;
+  
+}
 
 .navbar a {
   float: left;
@@ -83,29 +96,36 @@ button:hover {
 
 
 
-
-<div class="navbar">
-  <a href="#Home">HOME</a>
-  <a href="#PubEd">PUBLIC EDUCATION</a>
-
-
-  <div class="dropdown"><button class="dropbtn">SERVICES </button>
-  <div class="dropdown-content">
-      <a href="Serv1">Link 1</a>
-      <a href="Serv2">Link 2</a>
+<div class="wrapper">
+    <div class="logo">
+      <img alt="logo"  src="/build/assets/logo/public_safety_logo.webp" />
     </div>
-  </div> 
-    <div class="dropdown"><button class="dropbtn">TRAININGS </button>
-  <div class="dropdown-content">
-      <a href="Train1">Link 1</a>
-      <a href="Train2">Link 2</a>
-    </div>
-  </div> 
+    <div class="navbar">
+  
+      <a href="#Home">HOME</a>
+      <a href="#PubEd">PUBLIC EDUCATION</a>
 
-  <a href="#AboutUs">ABOUT US</a>
-  <a href="Contact">CONTACT</a>
+
+      <div class="dropdown"><button class="dropbtn">SERVICES </button>
+      <div class="dropdown-content">
+          <a href="Serv1">Link 1</a>
+          <a href="Serv2">Link 2</a>
+        </div>
+      </div> 
+        <div class="dropdown"><button class="dropbtn">TRAININGS </button>
+      <div class="dropdown-content">
+          <a href="Train1">Link 1</a>
+          <a href="Train2">Link 2</a>
+        </div>
+      </div> 
+
+      <a href="#AboutUs">ABOUT US</a>
+      <a href="Contact">CONTACT</a>
+
+    </div>
 
 </div>
+
 
 
 

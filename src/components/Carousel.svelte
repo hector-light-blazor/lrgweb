@@ -81,6 +81,11 @@
       </div>
 
       <div class="swiper-slide">
+                <img loading="lazy" alt="Karis"
+        src="./build/assets/carousel/karislaw_banner.png" />
+      </div>
+
+      <div class="swiper-slide">
                 <img loading="lazy" alt="PUB"
         src="./build/assets/carousel/pubed_banner.png" />
       </div>

@@ -721,140 +721,161 @@ var app = (function () {
     const file = "src/components/Header.svelte";
 
     function create_fragment(ctx) {
-    	let div4;
-    	let a0;
-    	let t1;
-    	let a1;
-    	let t3;
-    	let div1;
-    	let button0;
-    	let t5;
+    	let div6;
     	let div0;
-    	let a2;
-    	let t7;
-    	let a3;
-    	let t9;
-    	let div3;
-    	let button1;
-    	let t11;
+    	let img;
+    	let img_src_value;
+    	let t0;
+    	let div5;
+    	let a0;
+    	let t2;
+    	let a1;
+    	let t4;
     	let div2;
+    	let button0;
+    	let t6;
+    	let div1;
+    	let a2;
+    	let t8;
+    	let a3;
+    	let t10;
+    	let div4;
+    	let button1;
+    	let t12;
+    	let div3;
     	let a4;
-    	let t13;
+    	let t14;
     	let a5;
-    	let t15;
+    	let t16;
     	let a6;
-    	let t17;
+    	let t18;
     	let a7;
 
     	const block = {
     		c: function create() {
-    			div4 = element("div");
+    			div6 = element("div");
+    			div0 = element("div");
+    			img = element("img");
+    			t0 = space();
+    			div5 = element("div");
     			a0 = element("a");
     			a0.textContent = "HOME";
-    			t1 = space();
+    			t2 = space();
     			a1 = element("a");
     			a1.textContent = "PUBLIC EDUCATION";
-    			t3 = space();
-    			div1 = element("div");
+    			t4 = space();
+    			div2 = element("div");
     			button0 = element("button");
     			button0.textContent = "SERVICES";
-    			t5 = space();
-    			div0 = element("div");
+    			t6 = space();
+    			div1 = element("div");
     			a2 = element("a");
     			a2.textContent = "Link 1";
-    			t7 = space();
+    			t8 = space();
     			a3 = element("a");
     			a3.textContent = "Link 2";
-    			t9 = space();
-    			div3 = element("div");
+    			t10 = space();
+    			div4 = element("div");
     			button1 = element("button");
     			button1.textContent = "TRAININGS";
-    			t11 = space();
-    			div2 = element("div");
+    			t12 = space();
+    			div3 = element("div");
     			a4 = element("a");
     			a4.textContent = "Link 1";
-    			t13 = space();
+    			t14 = space();
     			a5 = element("a");
     			a5.textContent = "Link 2";
-    			t15 = space();
+    			t16 = space();
     			a6 = element("a");
     			a6.textContent = "ABOUT US";
-    			t17 = space();
+    			t18 = space();
     			a7 = element("a");
     			a7.textContent = "CONTACT";
+    			attr_dev(img, "alt", "logo");
+    			if (img.src !== (img_src_value = "/build/assets/logo/public_safety_logo.webp")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "class", "svelte-1lr7cqr");
+    			add_location(img, file, 100, 6, 1462);
+    			attr_dev(div0, "class", "logo svelte-1lr7cqr");
+    			add_location(div0, file, 99, 4, 1437);
     			attr_dev(a0, "href", "#Home");
-    			attr_dev(a0, "class", "svelte-1o8ldzy");
-    			add_location(a0, file, 87, 2, 1312);
+    			attr_dev(a0, "class", "svelte-1lr7cqr");
+    			add_location(a0, file, 104, 6, 1576);
     			attr_dev(a1, "href", "#PubEd");
-    			attr_dev(a1, "class", "svelte-1o8ldzy");
-    			add_location(a1, file, 88, 2, 1339);
-    			attr_dev(button0, "class", "dropbtn svelte-1o8ldzy");
-    			add_location(button0, file, 91, 24, 1403);
+    			attr_dev(a1, "class", "svelte-1lr7cqr");
+    			add_location(a1, file, 105, 6, 1607);
+    			attr_dev(button0, "class", "dropbtn svelte-1lr7cqr");
+    			add_location(button0, file, 108, 28, 1675);
     			attr_dev(a2, "href", "Serv1");
-    			attr_dev(a2, "class", "svelte-1o8ldzy");
-    			add_location(a2, file, 93, 6, 1485);
+    			attr_dev(a2, "class", "svelte-1lr7cqr");
+    			add_location(a2, file, 110, 10, 1765);
     			attr_dev(a3, "href", "Serv2");
-    			attr_dev(a3, "class", "svelte-1o8ldzy");
-    			add_location(a3, file, 94, 6, 1518);
-    			attr_dev(div0, "class", "dropdown-content svelte-1o8ldzy");
-    			add_location(div0, file, 92, 2, 1448);
-    			attr_dev(div1, "class", "dropdown svelte-1o8ldzy");
-    			add_location(div1, file, 91, 2, 1381);
-    			attr_dev(button1, "class", "dropbtn svelte-1o8ldzy");
-    			add_location(button1, file, 97, 26, 1592);
+    			attr_dev(a3, "class", "svelte-1lr7cqr");
+    			add_location(a3, file, 111, 10, 1802);
+    			attr_dev(div1, "class", "dropdown-content svelte-1lr7cqr");
+    			add_location(div1, file, 109, 6, 1724);
+    			attr_dev(div2, "class", "dropdown svelte-1lr7cqr");
+    			add_location(div2, file, 108, 6, 1653);
+    			attr_dev(button1, "class", "dropbtn svelte-1lr7cqr");
+    			add_location(button1, file, 114, 30, 1888);
     			attr_dev(a4, "href", "Train1");
-    			attr_dev(a4, "class", "svelte-1o8ldzy");
-    			add_location(a4, file, 99, 6, 1675);
+    			attr_dev(a4, "class", "svelte-1lr7cqr");
+    			add_location(a4, file, 116, 10, 1979);
     			attr_dev(a5, "href", "Train2");
-    			attr_dev(a5, "class", "svelte-1o8ldzy");
-    			add_location(a5, file, 100, 6, 1709);
-    			attr_dev(div2, "class", "dropdown-content svelte-1o8ldzy");
-    			add_location(div2, file, 98, 2, 1638);
-    			attr_dev(div3, "class", "dropdown svelte-1o8ldzy");
-    			add_location(div3, file, 97, 4, 1570);
+    			attr_dev(a5, "class", "svelte-1lr7cqr");
+    			add_location(a5, file, 117, 10, 2017);
+    			attr_dev(div3, "class", "dropdown-content svelte-1lr7cqr");
+    			add_location(div3, file, 115, 6, 1938);
+    			attr_dev(div4, "class", "dropdown svelte-1lr7cqr");
+    			add_location(div4, file, 114, 8, 1866);
     			attr_dev(a6, "href", "#AboutUs");
-    			attr_dev(a6, "class", "svelte-1o8ldzy");
-    			add_location(a6, file, 104, 2, 1761);
+    			attr_dev(a6, "class", "svelte-1lr7cqr");
+    			add_location(a6, file, 121, 6, 2081);
     			attr_dev(a7, "href", "Contact");
-    			attr_dev(a7, "class", "svelte-1o8ldzy");
-    			add_location(a7, file, 105, 2, 1795);
-    			attr_dev(div4, "class", "navbar svelte-1o8ldzy");
-    			add_location(div4, file, 86, 0, 1289);
+    			attr_dev(a7, "class", "svelte-1lr7cqr");
+    			add_location(a7, file, 122, 6, 2119);
+    			attr_dev(div5, "class", "navbar svelte-1lr7cqr");
+    			add_location(div5, file, 102, 4, 1546);
+    			attr_dev(div6, "class", "wrapper svelte-1lr7cqr");
+    			add_location(div6, file, 98, 0, 1411);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, a0);
-    			append_dev(div4, t1);
-    			append_dev(div4, a1);
-    			append_dev(div4, t3);
-    			append_dev(div4, div1);
-    			append_dev(div1, button0);
-    			append_dev(div1, t5);
-    			append_dev(div1, div0);
-    			append_dev(div0, a2);
-    			append_dev(div0, t7);
-    			append_dev(div0, a3);
-    			append_dev(div4, t9);
+    			insert_dev(target, div6, anchor);
+    			append_dev(div6, div0);
+    			append_dev(div0, img);
+    			append_dev(div6, t0);
+    			append_dev(div6, div5);
+    			append_dev(div5, a0);
+    			append_dev(div5, t2);
+    			append_dev(div5, a1);
+    			append_dev(div5, t4);
+    			append_dev(div5, div2);
+    			append_dev(div2, button0);
+    			append_dev(div2, t6);
+    			append_dev(div2, div1);
+    			append_dev(div1, a2);
+    			append_dev(div1, t8);
+    			append_dev(div1, a3);
+    			append_dev(div5, t10);
+    			append_dev(div5, div4);
+    			append_dev(div4, button1);
+    			append_dev(div4, t12);
     			append_dev(div4, div3);
-    			append_dev(div3, button1);
-    			append_dev(div3, t11);
-    			append_dev(div3, div2);
-    			append_dev(div2, a4);
-    			append_dev(div2, t13);
-    			append_dev(div2, a5);
-    			append_dev(div4, t15);
-    			append_dev(div4, a6);
-    			append_dev(div4, t17);
-    			append_dev(div4, a7);
+    			append_dev(div3, a4);
+    			append_dev(div3, t14);
+    			append_dev(div3, a5);
+    			append_dev(div5, t16);
+    			append_dev(div5, a6);
+    			append_dev(div5, t18);
+    			append_dev(div5, a7);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(div6);
     		}
     	};
 
@@ -10886,8 +10907,8 @@ var app = (function () {
     }
 
     function create_fragment$5(ctx) {
-    	let div8;
-    	let div4;
+    	let div9;
+    	let div5;
     	let div0;
     	let t0;
     	let div1;
@@ -10902,11 +10923,15 @@ var app = (function () {
     	let img2;
     	let img2_src_value;
     	let t3;
-    	let div5;
+    	let div4;
+    	let img3;
+    	let img3_src_value;
     	let t4;
     	let div6;
     	let t5;
     	let div7;
+    	let t6;
+    	let div8;
     	let current;
 
     	const link = new Link({
@@ -10920,8 +10945,8 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div8 = element("div");
-    			div4 = element("div");
+    			div9 = element("div");
+    			div5 = element("div");
     			div0 = element("div");
     			create_component(link.$$.fragment);
     			t0 = space();
@@ -10934,11 +10959,14 @@ var app = (function () {
     			div3 = element("div");
     			img2 = element("img");
     			t3 = space();
-    			div5 = element("div");
+    			div4 = element("div");
+    			img3 = element("img");
     			t4 = space();
     			div6 = element("div");
     			t5 = space();
     			div7 = element("div");
+    			t6 = space();
+    			div8 = element("div");
     			attr_dev(div0, "class", "swiper-slide svelte-1nkrsmo");
     			add_location(div0, file$4, 63, 5, 1273);
     			attr_dev(img0, "loading", "lazy");
@@ -10956,47 +10984,57 @@ var app = (function () {
     			attr_dev(div2, "class", "swiper-slide svelte-1nkrsmo");
     			add_location(div2, file$4, 77, 6, 1697);
     			attr_dev(img2, "loading", "lazy");
-    			attr_dev(img2, "alt", "PUB");
-    			if (img2.src !== (img2_src_value = "./build/assets/carousel/pubed_banner.png")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "Karis");
+    			if (img2.src !== (img2_src_value = "./build/assets/carousel/karislaw_banner.png")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "class", "svelte-1nkrsmo");
     			add_location(img2, file$4, 83, 16, 1898);
     			attr_dev(div3, "class", "swiper-slide svelte-1nkrsmo");
     			add_location(div3, file$4, 82, 6, 1855);
-    			attr_dev(div4, "class", "swiper-wrapper");
-    			add_location(div4, file$4, 61, 4, 1238);
-    			attr_dev(div5, "class", "swiper-pagination");
-    			add_location(div5, file$4, 89, 4, 2048);
-    			attr_dev(div6, "class", "swiper-button-next");
-    			add_location(div6, file$4, 91, 4, 2114);
-    			attr_dev(div7, "class", "swiper-button-prev");
-    			add_location(div7, file$4, 92, 4, 2157);
-    			attr_dev(div8, "class", "swiper-container svelte-1nkrsmo");
-    			add_location(div8, file$4, 60, 0, 1181);
+    			attr_dev(img3, "loading", "lazy");
+    			attr_dev(img3, "alt", "PUB");
+    			if (img3.src !== (img3_src_value = "./build/assets/carousel/pubed_banner.png")) attr_dev(img3, "src", img3_src_value);
+    			attr_dev(img3, "class", "svelte-1nkrsmo");
+    			add_location(img3, file$4, 88, 16, 2054);
+    			attr_dev(div4, "class", "swiper-slide svelte-1nkrsmo");
+    			add_location(div4, file$4, 87, 6, 2011);
+    			attr_dev(div5, "class", "swiper-wrapper");
+    			add_location(div5, file$4, 61, 4, 1238);
+    			attr_dev(div6, "class", "swiper-pagination");
+    			add_location(div6, file$4, 94, 4, 2204);
+    			attr_dev(div7, "class", "swiper-button-next");
+    			add_location(div7, file$4, 96, 4, 2270);
+    			attr_dev(div8, "class", "swiper-button-prev");
+    			add_location(div8, file$4, 97, 4, 2313);
+    			attr_dev(div9, "class", "swiper-container svelte-1nkrsmo");
+    			add_location(div9, file$4, 60, 0, 1181);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div8, anchor);
-    			append_dev(div8, div4);
-    			append_dev(div4, div0);
+    			insert_dev(target, div9, anchor);
+    			append_dev(div9, div5);
+    			append_dev(div5, div0);
     			mount_component(link, div0, null);
-    			append_dev(div4, t0);
-    			append_dev(div4, div1);
+    			append_dev(div5, t0);
+    			append_dev(div5, div1);
     			append_dev(div1, img0);
-    			append_dev(div4, t1);
-    			append_dev(div4, div2);
+    			append_dev(div5, t1);
+    			append_dev(div5, div2);
     			append_dev(div2, img1);
-    			append_dev(div4, t2);
-    			append_dev(div4, div3);
+    			append_dev(div5, t2);
+    			append_dev(div5, div3);
     			append_dev(div3, img2);
-    			append_dev(div8, t3);
-    			append_dev(div8, div5);
-    			append_dev(div8, t4);
-    			append_dev(div8, div6);
-    			append_dev(div8, t5);
-    			append_dev(div8, div7);
-    			/*div8_binding*/ ctx[1](div8);
+    			append_dev(div5, t3);
+    			append_dev(div5, div4);
+    			append_dev(div4, img3);
+    			append_dev(div9, t4);
+    			append_dev(div9, div6);
+    			append_dev(div9, t5);
+    			append_dev(div9, div7);
+    			append_dev(div9, t6);
+    			append_dev(div9, div8);
+    			/*div9_binding*/ ctx[1](div9);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -11018,9 +11056,9 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div8);
+    			if (detaching) detach_dev(div9);
     			destroy_component(link);
-    			/*div8_binding*/ ctx[1](null);
+    			/*div9_binding*/ ctx[1](null);
     		}
     	};
 
@@ -11056,7 +11094,7 @@ var app = (function () {
     			});
     	});
 
-    	function div8_binding($$value) {
+    	function div9_binding($$value) {
     		binding_callbacks[$$value ? "unshift" : "push"](() => {
     			$$invalidate(0, controll = $$value);
     		});
@@ -11070,7 +11108,7 @@ var app = (function () {
     		if ("controll" in $$props) $$invalidate(0, controll = $$props.controll);
     	};
 
-    	return [controll, div8_binding];
+    	return [controll, div9_binding];
     }
 
     class Carousel extends SvelteComponentDev {
@@ -11861,7 +11899,175 @@ var app = (function () {
     /* src/pages/PubEd.svelte generated by Svelte v3.16.7 */
     const file$9 = "src/pages/PubEd.svelte";
 
-    // (141:14) {:else}
+    // (137:12) {:else}
+    function create_else_block_2(ctx) {
+    	let img;
+    	let img_src_value;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			img = element("img");
+    			attr_dev(img, "loading", "lazy");
+    			attr_dev(img, "class", "imgResponsive svelte-1ig10dm");
+    			if (img.src !== (img_src_value = "/build/assets/pages/pubed/karis_law_banner.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Kari Banner");
+    			add_location(img, file$9, 137, 16, 4437);
+    			dispose = listen_dev(img, "click", /*click_handler_2*/ ctx[8], false, false, false);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, img, anchor);
+    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(img);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_2.name,
+    		type: "else",
+    		source: "(137:12) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (135:12) {#if karisVideo}
+    function create_if_block_2(ctx) {
+    	let current;
+
+    	const videoplayer = new VideoPlayer({
+    			props: { src: /*karisLink*/ ctx[4] },
+    			$$inline: true
+    		});
+
+    	videoplayer.$on("click", /*click_handler_1*/ ctx[7]);
+
+    	const block = {
+    		c: function create() {
+    			create_component(videoplayer.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(videoplayer, target, anchor);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(videoplayer.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(videoplayer.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(videoplayer, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2.name,
+    		type: "if",
+    		source: "(135:12) {#if karisVideo}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (147:14) {:else}
+    function create_else_block_1(ctx) {
+    	let img;
+    	let img_src_value;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			img = element("img");
+    			attr_dev(img, "loading", "lazy");
+    			attr_dev(img, "class", "imgResponsive svelte-1ig10dm");
+    			if (img.src !== (img_src_value = "/build/assets/pages/pubed/lv_banner.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Lv banner");
+    			add_location(img, file$9, 147, 21, 5077);
+    			dispose = listen_dev(img, "click", /*click_handler_4*/ ctx[10], false, false, false);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, img, anchor);
+    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(img);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_1.name,
+    		type: "else",
+    		source: "(147:14) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (145:12) {#if lvVideo}
+    function create_if_block_1$1(ctx) {
+    	let current;
+
+    	const videoplayer = new VideoPlayer({
+    			props: { src: /*lvLink*/ ctx[3] },
+    			$$inline: true
+    		});
+
+    	videoplayer.$on("click", /*click_handler_3*/ ctx[9]);
+
+    	const block = {
+    		c: function create() {
+    			create_component(videoplayer.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(videoplayer, target, anchor);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(videoplayer.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(videoplayer.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(videoplayer, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$1.name,
+    		type: "if",
+    		source: "(145:12) {#if lvVideo}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (156:14) {:else}
     function create_else_block$1(ctx) {
     	let img;
     	let img_src_value;
@@ -11874,8 +12080,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgResponsive svelte-1ig10dm");
     			if (img.src !== (img_src_value = "/build/assets/pages/pubed/text_to_911_banner.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "TXT 911 Banner");
-    			add_location(img, file$9, 141, 20, 5032);
-    			dispose = listen_dev(img, "click", /*click_handler_2*/ ctx[3], false, false, false);
+    			add_location(img, file$9, 156, 20, 5653);
+    			dispose = listen_dev(img, "click", /*click_handler_6*/ ctx[12], false, false, false);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -11893,25 +12099,23 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(141:14) {:else}",
+    		source: "(156:14) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (139:14) {#if txtVideo}
+    // (154:14) {#if txtVideo}
     function create_if_block$2(ctx) {
     	let current;
 
     	const videoplayer = new VideoPlayer({
-    			props: {
-    				src: "./build/assets/videos/txt_to_911.mp4"
-    			},
+    			props: { src: /*txtLink*/ ctx[5] },
     			$$inline: true
     		});
 
-    	videoplayer.$on("click", /*click_handler_1*/ ctx[2]);
+    	videoplayer.$on("click", /*click_handler_5*/ ctx[11]);
 
     	const block = {
     		c: function create() {
@@ -11940,7 +12144,7 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(139:14) {#if txtVideo}",
+    		source: "(154:14) {#if txtVideo}",
     		ctx
     	});
 
@@ -11976,18 +12180,18 @@ var app = (function () {
     	let t14;
     	let p3;
     	let t16;
-    	let img1;
-    	let img1_src_value;
+    	let current_block_type_index;
+    	let if_block0;
     	let t17;
     	let div5;
     	let t19;
-    	let img2;
-    	let img2_src_value;
+    	let current_block_type_index_1;
+    	let if_block1;
     	let t20;
     	let div6;
     	let t22;
-    	let current_block_type_index;
-    	let if_block;
+    	let current_block_type_index_2;
+    	let if_block2;
     	let t23;
     	let div7;
     	let t24;
@@ -11996,22 +12200,42 @@ var app = (function () {
     	let a;
     	let t27;
     	let div8;
-    	let img3;
-    	let img3_src_value;
+    	let img1;
+    	let img1_src_value;
     	let t28;
     	let h2;
     	let current;
     	let dispose;
-    	const if_block_creators = [create_if_block$2, create_else_block$1];
+    	const if_block_creators = [create_if_block_2, create_else_block_2];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
-    		if (/*txtVideo*/ ctx[0]) return 0;
+    		if (/*karisVideo*/ ctx[1]) return 0;
     		return 1;
     	}
 
     	current_block_type_index = select_block_type(ctx);
-    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    	if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    	const if_block_creators_1 = [create_if_block_1$1, create_else_block_1];
+    	const if_blocks_1 = [];
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*lvVideo*/ ctx[2]) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index_1 = select_block_type_1(ctx);
+    	if_block1 = if_blocks_1[current_block_type_index_1] = if_block_creators_1[current_block_type_index_1](ctx);
+    	const if_block_creators_2 = [create_if_block$2, create_else_block$1];
+    	const if_blocks_2 = [];
+
+    	function select_block_type_2(ctx, dirty) {
+    		if (/*txtVideo*/ ctx[0]) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index_2 = select_block_type_2(ctx);
+    	if_block2 = if_blocks_2[current_block_type_index_2] = if_block_creators_2[current_block_type_index_2](ctx);
 
     	const block = {
     		c: function create() {
@@ -12050,17 +12274,17 @@ var app = (function () {
     			p3 = element("p");
     			p3.textContent = "For forty years, 9-1-1 has served as the vital link between the American public and emergency services. Public education and awareness initiatives throughout the years have contributed in large measure to the incredible and ongoing success of the emergency communications system as a whole. It is imperative that 9-1-1 professionals, teachers, government officials, media representatives, and industry leaders are equipped with the tools necessary to continue these efforts in the face of an ever-changing telecommunications landscape, and that citizens of all ages are well versed in the role they play in ensuring effective and efficient emergency response for themselves and their fellow citizens.The resources below provide you with the tools necessary to educate yourself and your community on the proper use of the 9-1-1 system, no matter which side of the phone you are on.";
     			t16 = space();
-    			img1 = element("img");
+    			if_block0.c();
     			t17 = space();
     			div5 = element("div");
     			div5.textContent = "require multi-line telephone systems to have a configuration that permits users to directly initiate \n                a call to 9-1-1 without dialing any additional digit, code, prefix, or post-fix, and for other purposes.";
     			t19 = space();
-    			img2 = element("img");
+    			if_block1.c();
     			t20 = space();
     			div6 = element("div");
     			div6.textContent = "We work with other agencies such as the United States Postal Service (USPS), telephone companies and others to make sure the 9-1-1 physical address is well known.";
     			t22 = space();
-    			if_block.c();
+    			if_block2.c();
     			t23 = space();
     			div7 = element("div");
     			t24 = text("Text-to-911 is the ability to send a text message to reach 911 emergency call takers from your mobile phone or device. However, because text-to-911 is currently only available in certain locations, you should always make a voice call to contact 911 during an emergency whenever possible.\n               ");
@@ -12070,76 +12294,66 @@ var app = (function () {
     			a.textContent = "https://www.congress.gov/bill/115th-congress/house-bill/582/text";
     			t27 = space();
     			div8 = element("div");
-    			img3 = element("img");
+    			img1 = element("img");
     			t28 = space();
     			h2 = element("h2");
     			h2.textContent = "Click here for event information";
-    			add_location(b, file$9, 97, 9, 1817);
+    			add_location(b, file$9, 104, 9, 2047);
     			attr_dev(i0, "class", "svelte-1ig10dm");
-    			add_location(i0, file$9, 97, 33, 1841);
+    			add_location(i0, file$9, 104, 33, 2071);
     			attr_dev(h1, "class", "svelte-1ig10dm");
-    			add_location(h1, file$9, 97, 5, 1813);
+    			add_location(h1, file$9, 104, 5, 2043);
     			attr_dev(p0, "class", "svelte-1ig10dm");
-    			add_location(p0, file$9, 101, 17, 1942);
+    			add_location(p0, file$9, 108, 17, 2172);
     			attr_dev(p1, "class", "svelte-1ig10dm");
-    			add_location(p1, file$9, 105, 16, 2152);
+    			add_location(p1, file$9, 112, 16, 2382);
     			attr_dev(p2, "class", "svelte-1ig10dm");
-    			add_location(p2, file$9, 108, 16, 2500);
+    			add_location(p2, file$9, 115, 16, 2730);
     			attr_dev(button, "class", "svelte-1ig10dm");
-    			add_location(button, file$9, 113, 19, 2773);
+    			add_location(button, file$9, 120, 19, 3003);
     			attr_dev(div0, "id", "btnEvent");
     			attr_dev(div0, "class", "svelte-1ig10dm");
-    			add_location(div0, file$9, 112, 16, 2734);
-    			add_location(div1, file$9, 99, 8, 1906);
-    			add_location(div2, file$9, 116, 8, 2897);
+    			add_location(div0, file$9, 119, 16, 2964);
+    			add_location(div1, file$9, 106, 8, 2136);
+    			add_location(div2, file$9, 123, 8, 3127);
     			attr_dev(img0, "id", "imgCon");
     			if (img0.src !== (img0_src_value = "/build/assets/pages/pubed/main-photo.webp")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Kids with mascot");
     			attr_dev(img0, "class", "svelte-1ig10dm");
-    			add_location(img0, file$9, 118, 14, 2937);
-    			add_location(div3, file$9, 117, 8, 2917);
+    			add_location(img0, file$9, 125, 14, 3167);
+    			add_location(div3, file$9, 124, 8, 3147);
     			attr_dev(div4, "class", "grid-container-3 svelte-1ig10dm");
-    			add_location(div4, file$9, 98, 4, 1867);
-    			add_location(i1, file$9, 125, 16, 3095);
+    			add_location(div4, file$9, 105, 4, 2097);
+    			add_location(i1, file$9, 132, 16, 3325);
     			attr_dev(h3, "class", "svelte-1ig10dm");
-    			add_location(h3, file$9, 125, 12, 3091);
+    			add_location(h3, file$9, 132, 12, 3321);
     			attr_dev(p3, "class", "svelte-1ig10dm");
-    			add_location(p3, file$9, 126, 12, 3163);
-    			attr_dev(img1, "loading", "lazy");
-    			attr_dev(img1, "class", "imgResponsive svelte-1ig10dm");
-    			if (img1.src !== (img1_src_value = "/build/assets/pages/pubed/karis_law_banner.jpg")) attr_dev(img1, "src", img1_src_value);
-    			attr_dev(img1, "alt", "Kari Banner");
-    			add_location(img1, file$9, 128, 12, 4064);
+    			add_location(p3, file$9, 133, 12, 3393);
     			attr_dev(div5, "class", "bannerMsg svelte-1ig10dm");
-    			add_location(div5, file$9, 129, 12, 4193);
-    			attr_dev(img2, "loading", "lazy");
-    			attr_dev(img2, "class", "imgResponsive svelte-1ig10dm");
-    			if (img2.src !== (img2_src_value = "/build/assets/pages/pubed/lv_banner.jpg")) attr_dev(img2, "src", img2_src_value);
-    			attr_dev(img2, "alt", "Lv banner");
-    			add_location(img2, file$9, 133, 12, 4487);
+    			add_location(div5, file$9, 140, 12, 4638);
     			attr_dev(div6, "class", "bannerMsg svelte-1ig10dm");
-    			add_location(div6, file$9, 134, 13, 4607);
-    			add_location(br, file$9, 146, 15, 5578);
+    			add_location(div6, file$9, 149, 13, 5255);
+    			add_location(br, file$9, 161, 15, 6199);
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "href", "https://www.congress.gov/bill/115th-congress/house-bill/582/text");
-    			add_location(a, file$9, 146, 26, 5589);
+    			add_location(a, file$9, 161, 26, 6210);
     			attr_dev(div7, "class", "bannerMsg svelte-1ig10dm");
-    			add_location(div7, file$9, 144, 12, 5236);
-    			attr_dev(img3, "loading", "lazy");
-    			attr_dev(img3, "class", "imgResponsive svelte-1ig10dm");
-    			attr_dev(img3, "width", "850");
-    			if (img3.src !== (img3_src_value = "/assets/jpg/team_banner.jpg")) attr_dev(img3, "src", img3_src_value);
-    			attr_dev(img3, "alt", "Team Banner");
-    			add_location(img3, file$9, 150, 16, 5816);
+    			add_location(div7, file$9, 159, 12, 5857);
+    			attr_dev(img1, "loading", "lazy");
+    			attr_dev(img1, "class", "imgResponsive svelte-1ig10dm");
+    			attr_dev(img1, "width", "850");
+    			if (img1.src !== (img1_src_value = "/assets/jpg/team_banner.jpg")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "Team Banner");
+    			add_location(img1, file$9, 165, 16, 6437);
     			set_style(h2, "text-align", "center");
     			set_style(h2, "color", "#88362E");
     			attr_dev(h2, "class", "svelte-1ig10dm");
-    			add_location(h2, file$9, 151, 16, 5942);
-    			add_location(div8, file$9, 149, 12, 5793);
-    			add_location(div9, file$9, 124, 8, 3073);
+    			add_location(h2, file$9, 166, 16, 6563);
+    			add_location(div8, file$9, 164, 12, 6414);
+    			add_location(div9, file$9, 131, 8, 3303);
     			attr_dev(div10, "class", "flex-container svelte-1ig10dm");
-    			add_location(div10, file$9, 96, 0, 1779);
-    			dispose = listen_dev(button, "click", /*click_handler*/ ctx[1], false, false, false);
+    			add_location(div10, file$9, 103, 0, 2009);
+    			dispose = listen_dev(button, "click", /*click_handler*/ ctx[6], false, false, false);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -12172,15 +12386,15 @@ var app = (function () {
     			append_dev(div9, t14);
     			append_dev(div9, p3);
     			append_dev(div9, t16);
-    			append_dev(div9, img1);
+    			if_blocks[current_block_type_index].m(div9, null);
     			append_dev(div9, t17);
     			append_dev(div9, div5);
     			append_dev(div9, t19);
-    			append_dev(div9, img2);
+    			if_blocks_1[current_block_type_index_1].m(div9, null);
     			append_dev(div9, t20);
     			append_dev(div9, div6);
     			append_dev(div9, t22);
-    			if_blocks[current_block_type_index].m(div9, null);
+    			if_blocks_2[current_block_type_index_2].m(div9, null);
     			append_dev(div9, t23);
     			append_dev(div9, div7);
     			append_dev(div7, t24);
@@ -12189,7 +12403,7 @@ var app = (function () {
     			append_dev(div7, a);
     			append_dev(div9, t27);
     			append_dev(div9, div8);
-    			append_dev(div8, img3);
+    			append_dev(div8, img1);
     			append_dev(div8, t28);
     			append_dev(div8, h2);
     			current = true;
@@ -12208,29 +12422,83 @@ var app = (function () {
     				});
 
     				check_outros();
-    				if_block = if_blocks[current_block_type_index];
+    				if_block0 = if_blocks[current_block_type_index];
 
-    				if (!if_block) {
-    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-    					if_block.c();
+    				if (!if_block0) {
+    					if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block0.c();
     				}
 
-    				transition_in(if_block, 1);
-    				if_block.m(div9, t23);
+    				transition_in(if_block0, 1);
+    				if_block0.m(div9, t17);
+    			}
+
+    			let previous_block_index_1 = current_block_type_index_1;
+    			current_block_type_index_1 = select_block_type_1(ctx);
+
+    			if (current_block_type_index_1 === previous_block_index_1) {
+    				if_blocks_1[current_block_type_index_1].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks_1[previous_block_index_1], 1, 1, () => {
+    					if_blocks_1[previous_block_index_1] = null;
+    				});
+
+    				check_outros();
+    				if_block1 = if_blocks_1[current_block_type_index_1];
+
+    				if (!if_block1) {
+    					if_block1 = if_blocks_1[current_block_type_index_1] = if_block_creators_1[current_block_type_index_1](ctx);
+    					if_block1.c();
+    				}
+
+    				transition_in(if_block1, 1);
+    				if_block1.m(div9, t20);
+    			}
+
+    			let previous_block_index_2 = current_block_type_index_2;
+    			current_block_type_index_2 = select_block_type_2(ctx);
+
+    			if (current_block_type_index_2 === previous_block_index_2) {
+    				if_blocks_2[current_block_type_index_2].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks_2[previous_block_index_2], 1, 1, () => {
+    					if_blocks_2[previous_block_index_2] = null;
+    				});
+
+    				check_outros();
+    				if_block2 = if_blocks_2[current_block_type_index_2];
+
+    				if (!if_block2) {
+    					if_block2 = if_blocks_2[current_block_type_index_2] = if_block_creators_2[current_block_type_index_2](ctx);
+    					if_block2.c();
+    				}
+
+    				transition_in(if_block2, 1);
+    				if_block2.m(div9, t23);
     			}
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(if_block);
+    			transition_in(if_block0);
+    			transition_in(if_block1);
+    			transition_in(if_block2);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(if_block);
+    			transition_out(if_block0);
+    			transition_out(if_block1);
+    			transition_out(if_block2);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div10);
     			if_blocks[current_block_type_index].d();
+    			if_blocks_1[current_block_type_index_1].d();
+    			if_blocks_2[current_block_type_index_2].d();
     			dispose();
     		}
     	};
@@ -12248,16 +12516,37 @@ var app = (function () {
 
     function instance$6($$self, $$props, $$invalidate) {
     	let txtVideo = false;
+    	let karisVideo = false;
+    	let lvVideo = false;
+    	let lvLink = "./build/assets/videos/lv_psa.mp4";
+    	let karisLink = "./build/assets/videos/karis_law.mp4";
+    	let txtLink = "./build/assets/videos/txt_to_911.mp4";
 
     	const click_handler = () => {
     		navigateTo("#PubEdRequest");
     	};
 
     	const click_handler_1 = () => {
-    		$$invalidate(0, txtVideo = false);
+    		$$invalidate(1, karisVideo = false);
     	};
 
     	const click_handler_2 = () => {
+    		$$invalidate(1, karisVideo = !karisVideo);
+    	};
+
+    	const click_handler_3 = () => {
+    		$$invalidate(2, lvVideo = false);
+    	};
+
+    	const click_handler_4 = () => {
+    		$$invalidate(2, lvVideo = !lvVideo);
+    	};
+
+    	const click_handler_5 = () => {
+    		$$invalidate(0, txtVideo = false);
+    	};
+
+    	const click_handler_6 = () => {
     		$$invalidate(0, txtVideo = !txtVideo);
     	};
 
@@ -12267,9 +12556,28 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ("txtVideo" in $$props) $$invalidate(0, txtVideo = $$props.txtVideo);
+    		if ("karisVideo" in $$props) $$invalidate(1, karisVideo = $$props.karisVideo);
+    		if ("lvVideo" in $$props) $$invalidate(2, lvVideo = $$props.lvVideo);
+    		if ("lvLink" in $$props) $$invalidate(3, lvLink = $$props.lvLink);
+    		if ("karisLink" in $$props) $$invalidate(4, karisLink = $$props.karisLink);
+    		if ("txtLink" in $$props) $$invalidate(5, txtLink = $$props.txtLink);
     	};
 
-    	return [txtVideo, click_handler, click_handler_1, click_handler_2];
+    	return [
+    		txtVideo,
+    		karisVideo,
+    		lvVideo,
+    		lvLink,
+    		karisLink,
+    		txtLink,
+    		click_handler,
+    		click_handler_1,
+    		click_handler_2,
+    		click_handler_3,
+    		click_handler_4,
+    		click_handler_5,
+    		click_handler_6
+    	];
     }
 
     class PubEd extends SvelteComponentDev {
@@ -12555,7 +12863,7 @@ var app = (function () {
     }
 
     // (271:54) 
-    function create_if_block_2(ctx) {
+    function create_if_block_2$1(ctx) {
     	let h30;
     	let t1;
     	let div4;
@@ -12813,7 +13121,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2.name,
+    		id: create_if_block_2$1.name,
     		type: "if",
     		source: "(271:54) ",
     		ctx
@@ -12991,7 +13299,7 @@ var app = (function () {
     	let dispose;
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*fileName*/ ctx[8]) return create_if_block_1$1;
+    		if (/*fileName*/ ctx[8]) return create_if_block_1$2;
     		return create_else_block$2;
     	}
 
@@ -14031,7 +14339,7 @@ var app = (function () {
     }
 
     // (261:34) {#if fileName}
-    function create_if_block_1$1(ctx) {
+    function create_if_block_1$2(ctx) {
     	let label;
     	let t;
 
@@ -14056,7 +14364,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$1.name,
+    		id: create_if_block_1$2.name,
     		type: "if",
     		source: "(261:34) {#if fileName}",
     		ctx
@@ -14094,7 +14402,7 @@ var app = (function () {
     	let div3;
     	let current;
     	let dispose;
-    	const if_block_creators = [create_if_block$3, create_if_block_2, create_if_block_3];
+    	const if_block_creators = [create_if_block$3, create_if_block_2$1, create_if_block_3];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
