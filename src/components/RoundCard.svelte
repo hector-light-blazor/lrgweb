@@ -26,6 +26,14 @@
     });
 </script>
 <style>
+    .flex-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content:space-around;
+    }
+
+   
     #card {
         border: 1px solid rgb(222, 222, 222);
        
@@ -55,6 +63,18 @@
     display: block;
     border-bottom: 1px solid #dedede;
     }
+   
+    button{
+        background: #D34628;
+        color: #fff;
+        width: 120px;
+        height: 40px;
+        border: 1px solid #243C6B;
+    }
+    button:hover{
+        background: rgba(245, 86, 50, 0.774);
+        cursor: pointer;
+    }
 </style>
 
 
@@ -67,11 +87,21 @@
     margin-top:-{(circleSize/2)}px; margin-left: -{(circleSize/2)}px;">
         <h2 style="color: {circleTextColor}">{statusNumber}</h2>
     </div>
-    <div>
-        <h3>{title}</h3>
-        <p>
-            {p}
-        </p>
+    <div class="flex-con">
+        <div>
+            <h3>{title}</h3>
+        </div>
+        <div>
+            <p>
+                {p}
+            </p>
+        </div>
+        <div >
+            <button>
+                Link
+            </button>
+        </div>
+        
     </div>
 
 

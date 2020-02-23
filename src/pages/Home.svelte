@@ -116,8 +116,8 @@
                 p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County."
                 title="Per Month" />
                 <RoundCard 
-                p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County."
-                title="Per Quarter" />
+                p="Did you called for an 9-1-1 address? Tired of waiting? Well don't wait any longer. Find out if you're address is ready.  Click at the following link to get your address letter online!"
+                title="Open Request" />
             </div>
         </div>
         
