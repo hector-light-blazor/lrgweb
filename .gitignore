@@ -2,6 +2,7 @@ node_modules
 .DS_Store
 public/.DS_Store
 .DS_Store
+public/build/*.js
 public/build/bundle.*
 public/build/bundle.css
 public/build/bundle.css.map
