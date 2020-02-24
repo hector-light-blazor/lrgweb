@@ -15,7 +15,7 @@ export default {
 		dir: 'public/build'//'public/build/bundle.js'
 	},
 	experimentalCodeSplitting: true,
-		experimentalDynamicImport: true,
+	experimentalDynamicImport: true,
 	plugins: [
 		svelte({
 			// enable run-time checks when not in production

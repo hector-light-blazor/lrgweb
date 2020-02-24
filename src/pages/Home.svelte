@@ -1,15 +1,10 @@
 <script>
-    import {onMount} from "svelte";
     import Carousel from "../components/Carousel.svelte";
     import RoundCard from "../components/RoundCard.svelte";
     import Header from "../components/Header.svelte";
 	import Footer from "../components/Footer.svelte";
     import Wrapper from "../components/Wrapper.svelte";
-    export let nav;
-    
-    onMount(()=> {
-        console.log(nav);
-    })
+ 
 </script>
 <style>
     .flex{
@@ -91,7 +86,7 @@
     }
 </style>
 
-<Header  {nav} />
+<Header   />
 <Wrapper>
     <div>
     <div class="flex-main">
@@ -114,7 +109,7 @@
                     <span>PSAPs</span>
                 </div>
                 <div class="title">
-                    <span>20</span>
+                    <span>25</span>
                     <span>Municipalities</span>
                 </div>
             </div>

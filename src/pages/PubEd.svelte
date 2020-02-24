@@ -5,8 +5,6 @@
 	 import Footer from "../components/Footer.svelte";
      import Wrapper from "../components/Wrapper.svelte";
 
-     export let nav;
-
      let txtVideo = false;
      let karisVideo = false;
      let lvVideo = false;
@@ -106,7 +104,7 @@
     }
    
 </style>
-<Header {nav}  />   
+<Header   />   
     <Wrapper>
         <div class="flex-container">
         <h1><b>Public Education </b><i > Program</i></h1>
@@ -171,11 +169,7 @@
                         <img loading="lazy" class="imgResponsive" width="850" src="/assets/jpg/team_banner.jpg" alt="Team Banner" /> 
                         <h2 style="text-align: center;color: #88362E;">Click here for event information</h2>
                     </div>
-
-                
                 </div>
-        
-
         </div>
-    </Wrapper>
-    <Footer />
+</Wrapper>
+<Footer />
