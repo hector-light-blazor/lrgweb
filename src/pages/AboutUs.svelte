@@ -31,13 +31,37 @@
     }
 
     .pics-manage{
-        height: 3400px;
+        height: auto !important;
+        padding-top: 3%;
+        padding-bottom: 10%;
     }
     .grid-staff{
         display:flex;
         flex-direction:row;
         justify-content: space-between;
         align-items:center;
+    }
+
+
+     @media screen and (max-width: 1024px) {
+       .grid-management{
+            display: grid;
+           
+            margin-bottom: 130px;
+            align-items: center;
+            justify-content: space-evenly;
+            max-height: 100%;
+            height: 100vh;
+      }
+
+
+       .grid-staff{
+               display: grid;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+       }
     }
 
 </style>
