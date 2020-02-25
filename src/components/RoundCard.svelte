@@ -6,18 +6,52 @@
     export let circleSize = 80;
     export let circleBackColor="#2B4988";
     export let circleTextColor="#fff";
-    export let circleValue = 100;
+    export let circleValue = 0;
     export let timerAnimation = 40;
+    export let incrementValue = 5;
     export let title;
-    export let p;
-
+    export let p = [];
+    export let option = -1;
+    export let linkOn = false;
     let statusNumber = 0;
     let interval;
+     let overAllYears = "https://gis.lrgvdc911.org/php/spartan/api/v2/index.php/addressticket/overAllYears/";
+     let currentMonth = "https://gis.lrgvdc911.org/php/spartan/api/v2/index.php/addressticket/currentMonth/";
+     let openTickets = "https://gis.lrgvdc911.org/php/spartan/api/v2/index.php/addressticket/openTickets/";
+    
 
+  
     onMount(async () => {
+      
+      //Option 1 to download all tickets over the years..
+      if(option == 1){
+
+          let response = await fetch(overAllYears);
+          let data = await response.json()
+          if(data){
+             circleValue = parseInt(data['total']);
+          }
+      }else if(option == 2){
+            let response = await fetch(currentMonth);
+          let data = await response.json()
+          if(data){
+             circleValue = parseInt(data['total']);
+          }
+
+      }
+      else if(option == 3){
+          let response = await fetch(openTickets);
+           let data = await response.json()
+          if(data){
+             circleValue = parseInt(data['total']);
+          }
+
+      }
+
+      
       interval = setInterval(() => {
-          if(circleValue != statusNumber) {
-              statusNumber += 5;
+        if(circleValue > statusNumber) {
+              statusNumber += incrementValue;
           }else{// when they are the same number
               statusNumber = circleValue;
               clearInterval(interval);
@@ -92,15 +126,18 @@
             <h3>{title}</h3>
         </div>
         <div>
-            <p>
-                {p}
-            </p>
+            {#each p as para}
+                <p>{para}</p>
+           {/each}
         </div>
-        <div >
-            <button>
-                Link
-            </button>
-        </div>
+        {#if linkOn}
+            <div >
+                <button on:click="{()=>{window.app.navigate('/OpenTickets')}}">
+                    Link
+                </button>
+            </div>
+        {/if}
+        
         
     </div>
 

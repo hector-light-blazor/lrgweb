@@ -15,7 +15,7 @@
         justify-items: center;
         text-align: center;
         margin:0 auto;
-        padding: 40px;
+        padding: 70px;
     }
     .flex-main{
         display: flex;
@@ -30,9 +30,20 @@
         height: 290px;
         margin-bottom: 50px;
     }
+
+    .ecoms2{
+        
+        background: #8a0303;
+        max-width: 100%;
+        height: 290px;
+        margin-bottom: 50px;
+    }
+
+    
+
     #innerComms{
         height: 100%;
-        margin-top: 20px;
+        margin-top: 65px;
         padding: 0;
         color: white;
         display: -webkit-box;
@@ -44,19 +55,45 @@
         justify-content: center;
 
     }
+    #innerComms2{
+        height: 100%;
+        margin-top: -100px;
+        padding: 0;
+        color: white;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+       
+        justify-content: center;
+
+    }
 
     .title{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 30pt;
+        font-size: 25pt;
         text-align: center;
-        line-height: 54px;
-        padding: 15px;
-        width: 240px;
-        height: 160px;
-        
-        
+        line-height: 50px;
+        padding: 75px;
+        width: 300px;
+        height: 250px;
+                
+    }
+
+    .title2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25pt;
+        text-align: center;
+        line-height: 50px;
+        padding: 75px;
+        width: 300px;
+        height: 250px;
+                
     }
 
     #titleServe{
@@ -83,7 +120,12 @@
           max-height: 100%;
           height: 100vh;
       }
+      
     }
+    
+          
+    
+
 </style>
 
 <Header   />
@@ -96,36 +138,60 @@
             <!-- <div id="titleServe">We Serve</div> -->
             <div id="innerComms">
                 
+                
                 <div class="title">
                     <span>2</span>
-                    <span>Counties</span>
-                </div>
-                <div class="title">
-                    <span>1</span>
-                    <span>Million Served</span>
-                </div>
-                <div class="title">
-                    <span>17</span>
-                    <span>PSAPs</span>
+                    <span>COUNTIES</span>
                 </div>
                 <div class="title">
                     <span>25</span>
-                    <span>Municipalities</span>
+                    <span>MUNICIPALITIES</span>
+                </div>
+                <div class="title">
+                    <span>17</span>
+                    <span>PSAP</span>
                 </div>
             </div>
         </div>
+        
             <div id="title">
                 <h1>Address Request</h1>
-                <h3>Summary Overview</h3>
+               
                 <div class="flex">
-                    <RoundCard p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County." title="Per Year" />
-                    <RoundCard 
-                    p="Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County."
+                    <RoundCard incrementValue={111} option="1" p={[""]} title="Per Year" />
+                    <RoundCard  option="2"
+                    p={["Find out what services the Cameron County 911 Communication District provides to the citizens of Cameron County."]}
                     title="Per Month" />
-                    <RoundCard 
-                    p="Did you called for an 9-1-1 address? Tired of waiting? Well don't wait any longer. Find out if you're address is ready.  Click at the following link to get your address letter online!"
+                    <RoundCard  option="3"
+                    linkOn={true} 
+                    p={["Have you called to register for your 9-1-1 address? Click below to see if your address letter is ready!",]}
                     title="Open Request" />
                 </div>
+
+
+    <div class="ecoms2">
+            <!-- <div id="titleServe">We Serve</div> -->
+            <div id="innerComms2">
+                
+                
+                <div class="title2">
+                    <span>882,416</span>
+                    <span>RESIDENTS SERVE</span>
+                </div>
+                <div class="title2">
+                    <span>41,075</span>
+                    <span>AVERAGE CALLS PER MONTH</span>
+                </div>
+                <div class="title2">
+                    <span>1,369</span>
+                    <span>AVERAGE CALLS PER DAY</span>
+                </div>
+                
+            </div>
+        </div>
+                
+
+
             </div>
         </div>
     </div>

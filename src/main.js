@@ -31,5 +31,10 @@ app.path('/PubEd', async ctx => {
     ctx.mount(Chunk(()=> import('./pages/PubEd.svelte')));
 })
 
+
+app.path('/OpenTickets', async ctx => {
+    ctx.mount(Chunk(() => import('./pages/OpenTickets.svelte')));
+});
+
 //Call this function below to load your app....
 app.load()

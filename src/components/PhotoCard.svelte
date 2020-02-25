@@ -1,4 +1,5 @@
 <script>
+   
     export let cardHeight = 400;
     export let cardWidth = 400;
     export let cardRadius = 0;
@@ -9,6 +10,9 @@
     export let title = "Insert Title";
     export let photoHeight = "300px";
     export let photo = "https://images.pexels.com/photos/3526416/pexels-photo-3526416.jpeg";
+
+   
+
 </script>
 <style>
 
@@ -43,9 +47,6 @@
     img{
         border: 2px solid #ccc!important;
     }
-
-
-  
 </style>
 
 <div id="card" style="border-raidus:{cardRadius};height: {cardHeight}px; width: {cardWidth}px;">
