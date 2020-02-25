@@ -22,7 +22,14 @@ app.path('/', (req, res) => {
     req.mount(Home);
 })
 
+//ADD any new paths into the website by following this code below...
+
+app.path('/AboutUs', async ctx=>{
+    ctx.mount(Chunk(()=> import("./pages/AboutUs.svelte")));
+});
 app.path('/PubEd', async ctx => {
     ctx.mount(Chunk(()=> import('./pages/PubEd.svelte')));
 })
+
+//Call this function below to load your app....
 app.load()
